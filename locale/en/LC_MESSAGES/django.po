@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 22:22+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\templates\blogs\blog.html:44 .\templates\blogs\blog_detail.html:45
+#: .\templates\products\product.html:40
+#: .\templates\products\product_detail.html:45
+msgid "Categories"
+msgstr ""
+
+#: .\templates\blogs\blog.html:187 .\templates\blogs\blog.html:295
+#: .\templates\blogs\blog_detail.html:187
+msgid "Recent Posts"
+msgstr ""
+
+#: .\templates\blogs\blog.html:233 .\templates\blogs\blog_detail.html:231
+msgid "Blog Tags"
+msgstr ""
+
+#: .\templates\blogs\blog.html:316 .\templates\blogs\blog.html:364
+#: .\templates\blogs\blog.html:388 .\templates\blogs\blog.html:412
+#: .\templates\blogs\blog.html:436
+msgid "view more"
+msgstr ""
+
+#: .\templates\blogs\blog.html:444 .\templates\products\product.html:1854
+msgid "Previous"
+msgstr ""
+
+#: .\templates\blogs\blog.html:459 .\templates\products\product.html:1875
+msgid "Next"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:384
+msgid "Related News"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:437
+msgid "Comments"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:496
+msgid "Submit comment"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:502
+msgid "Your Name *"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:505
+msgid "Your E-mail *"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:508
+msgid "Your Website"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:513
+msgid "Your Message"
+msgstr ""
+
+#: .\templates\blogs\blog_detail.html:517
+msgid "Send Message"
+msgstr ""
+
+#: .\templates\layouts\footer.html:22
+msgid ""
+"\n"
+"                                        <li>\n"
+"                                            <a href=\"#\">About Us</a>\n"
+"                                        </li>\n"
+"                                        <li>\n"
+"                                            <a href=\"#\">Reasons to shop</"
+"a>\n"
+"                                        </li>\n"
+"                                        <li>\n"
+"                                            <a href=\"#\">What our customers "
+"say</a>\n"
+"                                        </li>\n"
+"                                        <li>\n"
+"                                            <a href=\"#\">Meet the teaml</"
+"a>\n"
+"                                        </li>\n"
+"                                        <li>\n"
+"                                            <a href=\"#\">Contact our "
+"buyers</a>\n"
+"                                        </li>\n"
+"                                    "
+msgstr ""
+
+#: .\templates\layouts\footer.html:86
+msgid "Opening Hours :"
+msgstr ""
+
+#: .\templates\layouts\footer.html:99
+msgid ""
+"\n"
+"                                <div class=\"title-block\">Newsletter</div>\n"
+"                                <div class=\"sub-title\">Sign up to our "
+"newsletter to get the latest articles, lookbooks voucher codes direct\n"
+"                                    to your inbox\n"
+"                                </div>\n"
+"                                "
+msgstr ""
+
+#: .\templates\layouts\footer.html:108 .\templates\pages\home.html:2446
+msgid "Enter Your Email"
+msgstr ""
+
+#: .\templates\layouts\footer.html:111 .\templates\pages\home.html:2449
+msgid "subscribe"
+msgstr ""
+
+#: .\templates\layouts\footer.html:124
+msgid "Follow us on"
+msgstr ""
+
+#: .\templates\layouts\footer.html:159
+msgid "Payment accept"
+msgstr ""
+
+#: .\templates\layouts\header.html:32 .\templates\pages\home.html:36
+msgid "Search"
+msgstr ""
+
+#: .\templates\layouts\header.html:77 .\templates\layouts\header.html:265
+#: .\templates\pages\home.html:81
+msgid "View Cart"
+msgstr ""
+
+#: .\templates\layouts\header.html:78 .\templates\layouts\header.html:180
+#: .\templates\layouts\header.html:266 .\templates\pages\home.html:82
+#: .\templates\pages\home.html:159
+msgid "Checkout"
+msgstr ""
+
+#: .\templates\layouts\header.html:109 .\templates\pages\home.html:103
+msgid "Home"
+msgstr ""
+
+#: .\templates\layouts\header.html:112 .\templates\pages\home.html:106
+msgid "Blog"
+msgstr ""
+
+#: .\templates\layouts\header.html:115 .\templates\pages\home.html:109
+msgid "Product"
+msgstr ""
+
+#: .\templates\layouts\header.html:120 .\templates\pages\home.html:113
+msgid "About"
+msgstr ""
+
+#: .\templates\layouts\header.html:125 .\templates\pages\home.html:116
+msgid "Contact"
+msgstr ""
+
+#: .\templates\layouts\header.html:162 .\templates\pages\home.html:133
+#: .\templates\pages\home.html:142
+msgid "My Account"
+msgstr ""
+
+#: .\templates\layouts\header.html:168 .\templates\pages\home.html:148
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\layouts\header.html:174 .\templates\pages\home.html:154
+msgid "Register Account"
+msgstr ""
+
+#: .\templates\layouts\header.html:186 .\templates\pages\home.html:166
+msgid "My Wishlists"
+msgstr ""
+
+#: .\templates\pages\about.html:35
+msgid "About Us"
+msgstr ""
+
+#: .\templates\pages\about.html:44
+msgid "WHO WE ARE"
+msgstr ""
+
+#: .\templates\pages\about.html:60
+msgid "WHAT WE DO"
+msgstr ""
+
+#: .\templates\pages\about.html:82
+msgid "MEET OUR TEAM"
+msgstr ""
+
+#: .\templates\pages\contact.html:41
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\pages\contact.html:121
+msgid "Your name"
+msgstr ""
+
+#: .\templates\pages\contact.html:124
+msgid "Your email"
+msgstr ""
+
+#: .\templates\pages\contact.html:129
+msgid "Subject"
+msgstr ""
+
+#: .\templates\pages\contact.html:134
+msgid "Message"
+msgstr ""
+
+#: .\templates\pages\contact.html:140
+msgid "Send message"
+msgstr ""
+
+#: .\templates\pages\home.html:302
+msgid ""
+"\n"
+"                                            <div>FREE DELIVERY</div>\n"
+"                                            <div>From $ 250</div>\n"
+"                                            "
+msgstr ""
+
+#: .\templates\pages\home.html:317
+msgid ""
+"\n"
+"                                            <div>MONEY BACK</div>\n"
+"                                            <div>GUARANTEED</div>\n"
+"                                            "
+msgstr ""
+
+#: .\templates\pages\home.html:1001
+msgid ""
+"\n"
+"                                                    <h2>Living Room</h2>\n"
+"                                                    <p>Living room </p>\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\pages\home.html:1008 .\templates\pages\home.html:1822
+msgid "New Arrivals"
+msgstr ""
+
+#: .\templates\pages\home.html:1011 .\templates\pages\home.html:1825
+msgid "Best Seller"
+msgstr ""
+
+#: .\templates\pages\home.html:1014 .\templates\pages\home.html:1828
+msgid "Featured Product"
+msgstr ""
+
+#: .\templates\pages\home.html:1535
+msgid ""
+"\n"
+"                                                    <h2>Deal Of The Day</"
+"h2>\n"
+"                                                    <p>Hurry Up, The Same "
+"Time Is Not Extended !!!</p>\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\pages\home.html:1815
+msgid ""
+"\n"
+"                                                    <h2>kitchen</h2>\n"
+"                                                    <p>kitchen ... </p>\n"
+"                                                    "
+msgstr ""
+
+#: .\templates\pages\home.html:2438
+msgid ""
+"\n"
+"                                                <div class=\"title-block"
+"\">Newsletter</div>\n"
+"                                                <div class=\"sub-title"
+"\">Sign up to our newsletter to get the latest articles, lookbooks voucher "
+"codes\n"
+"                                                    direct to your inbox</"
+"div>\n"
+"                                                "
+msgstr ""
+
+#: .\templates\products\product.html:181
+msgid "Catalog"
+msgstr ""
+
+#: .\templates\products\product.html:183
+msgid "categories"
+msgstr ""
+
+#: .\templates\products\product.html:422
+#: .\templates\products\product_detail.html:294
+#: .\templates\products\product_detail.html:588
+msgid "Product Tags"
+msgstr ""
+
+#: .\templates\products\product.html:474
+msgid "Lingving Room"
+msgstr ""
+
+#: .\templates\products\product_detail.html:189
+msgid "Best seller"
+msgstr ""
+
+#: .\templates\products\product_detail.html:585
+msgid "Description"
+msgstr ""
+
+#: .\templates\products\product_detail.html:591
+msgid "Reviews (2)"
+msgstr ""
+
+#: .\templates\products\product_detail.html:727
+msgid "Related Products"
+msgstr ""

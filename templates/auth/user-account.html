@@ -1,0 +1,76 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}My Account{% endblock %}
+
+{% block body %}class="user-acount"{% endblock %}
+{% block content %}
+<div class="main-content">
+    <div class="wrap-banner">
+
+        <!-- breadcrumb -->
+        <nav class="breadcrumb-bg">
+            <div class="container no-index">
+                <div class="breadcrumb">
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>My Account</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+
+        <div class="acount head-acount">
+            <div class="container">
+                <div id="main">
+                    <h1 class="title-page">My Account</h1>
+                    <div class="content" id="block-history">
+                        <table class="std table">
+                            <tbody>
+                                <tr>
+                                    <th class="first_item">First name :</th>
+                                    <td>{{ user.first_name }}</td>
+                                </tr>
+                                <tr>
+                                    <th class="first_item">Last name :</th>
+                                    <td>{{ user.last_name }}</td>
+                                </tr>
+                                <tr>
+                                    <th class="first_item">Username :</th>
+                                    <td>{{ user.username }}</td>
+                                </tr>
+                                <tr>
+                                    <th class="first_item">Email :</th>
+                                    <td>{{ user.email }}</td>
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <button class="btn btn-primary" data-link-action="sign-in" type="submit">
+                        view Address
+                    </button>
+                    <div class="order">
+                        <h4>Order
+                            <span class="detail">History</span>
+                        </h4>
+                        <p>You haven't placed any orders yet.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

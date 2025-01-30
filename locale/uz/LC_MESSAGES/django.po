@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 22:22+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+msgid "Recent Posts"
+msgstr "Oxirgi xabarlar"
+
+msgid "Blog Tags"
+msgstr "Blog teglari"
+
+msgid "view more"
+msgstr "batafsil"
+
+msgid "Previous"
+msgstr "Oldingi"
+
+msgid "Next"
+msgstr "Keyingi"
+
+msgid "Related News"
+msgstr "Tegishli yangiliklar"
+
+msgid "Comments"
+msgstr "Komentariyalar"
+
+msgid "Submit comment"
+msgstr "Fikr bildirish"
+
+msgid "Your Name *"
+msgstr "Sizning Ismingiz *"
+
+msgid "Your E-mail *"
+msgstr "Sizning Emailingiz *"
+
+msgid "Your Website"
+msgstr "Sizning web sahifangiz "
+
+msgid "Your Message"
+msgstr "Sizning Xabaringiz"
+
+msgid "Send Message"
+msgstr "Xabarni yuborish "
+
+msgid "Opening Hours :"
+msgstr "Ish vaqti:"
+
+msgid "Enter Your Email"
+msgstr "Sizning Emailingiz "
+
+msgid "subscribe"
+msgstr "obuna bo'ling"
+
+msgid "Follow us on"
+msgstr "Bizni kuzatib boring"
+
+msgid "Payment accept"
+msgstr "To'lov qabul qilinadi"
+
+msgid "Search"
+msgstr "Qidiruv"
+
+msgid "View Cart"
+msgstr "Cartani ko'rish"
+
+msgid "Checkout"
+msgstr "O'chirish"
+
+msgid "Home"
+msgstr "Uy"
+
+msgid "Blogs"
+msgstr "Bloglar"
+
+msgid "Products"
+msgstr "Mahsulotlar"
+
+msgid "About"
+msgstr "Haqida"
+
+msgid "Contact"
+msgstr "Aloqa"
+
+msgid "My Account"
+msgstr "Mening hisobim"
+
+msgid "Sign in"
+msgstr "Tizimga kirish"
+
+msgid "Register Account"
+msgstr "Ro'yxatdan o'tish"
+
+msgid "My Wishlists"
+msgstr "Mening istaklarim"
+
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+msgid "WHO WE ARE"
+msgstr "Biz kimiz"
+
+msgid "WHAT WE DO"
+msgstr "Biz nima qilamiz"
+
+msgid "MEET OUR TEAM"
+msgstr "Bizning Jamoa"
+
+msgid "Contact Us"
+msgstr "Biz bilan bog'lanish"
+
+msgid "Your name"
+msgstr "Sizning ismingiz"
+
+msgid "Your email"
+msgstr "Sizning emailingiz"
+
+msgid "Subject"
+msgstr "Mavzu"
+
+msgid "Message"
+msgstr "Xabar"
+
+msgid "Send message"
+msgstr "Xabarni yuborish"
+
+msgid "New Arrivals"
+msgstr "Yangi kelganlar"
+
+msgid "Best Seller"
+msgstr "Eng ko'p sotilgan"
+
+msgid "Featured Product"
+msgstr "Tanlangan mahsulot"
+
+msgid "Catalog"
+msgstr "Katalog"
+
+msgid "categories"
+msgstr "kategoriyalar"
+
+msgid "Product Tags"
+msgstr "Mahsulot teglari"
+
+msgid "Lingving Room"
+msgstr "Mehmonxona"
+
+msgid "Best seller"
+msgstr "Eng yaxshi sotuvchi"
+
+msgid "Description"
+msgstr "Tasnifi"
+
+msgid "Reviews (2)"
+msgstr "Sharhlar (2)"
+
+msgid "Related Products"
+msgstr "Tegishli mahsulotlar"
+
+msgid "Newsletter"
+msgstr "Yangiliklar"
+
+msgid "Sign up to our newsletter to get the latest articles, lookbooks voucher codes direct to your inbox"
+msgstr "Oxirgi yangiliklardan xabardor bo'lish uchun bizga obuna bo'ling!"
+
+msgid "Furniture selling company"
+msgstr "Mebel sotuvchi korxona"
+
+msgid "Settings"
+msgstr "Sozlamalar"
+
+msgid "Reasons to shop"
+msgstr "Xarid qilish uchun sabablar"
+
+msgid "What our customers say"
+msgstr "Bizning mijozlarimiz nima deyishadi"
+
+msgid "Meet the team"
+msgstr "Jamoa bilan tanishing"
+
+msgid "Address :"
+msgstr "Manzil :"
+
+msgid "Email :"
+msgstr "Pochta :"
+
+msgid "Phone :"
+msgstr "Telefon :"
+
+msgid "FREE DELIVERY"
+msgstr "Yetkazish bepul"
+
+msgid "From $ 250"
+msgstr "250$ dan"
+
+msgid "MONEY BACK"
+msgstr "Pul qaytarish"
+
+msgid "GUARANTEED"
+msgstr "Kafolatlangan"
+
+msgid "Living Room"
+msgstr "Mehmonxona"
+
+msgid "Deal Of The Day"
+msgstr "Aksiyalar"
+
+msgid "Hurry Up, The Same Time Is Not Extended !!!"
+msgstr "Shoshiling vaqti chegaralangan !!!"
+
+msgid "Best Sellers"
+msgstr "Eng ko'p sotilganlar"
+
+msgid "Special Products"
+msgstr "Maxsus mahsulotlar"
+
+msgid "Best sellers Products"
+msgstr "Eng ko'p sotilgan mahsulotlar"
+
+msgid "View all product"
+msgstr "Barcha mahsulotlarni ko'rish"
+
+msgid "Here is a list of our best sellers"
+msgstr "Mana bizning eng yaxshi sotuvchilarimiz ro'yxati"
+
+msgid "SHOP THE LOOK"
+msgstr "KO'RIB OLISH"
+
+msgid "RECENT POSTS"
+msgstr "Oxirgi Postlar"
+
+msgid "FREE INSTALLATION"
+msgstr "Bepul O'rnatish"
+
+msgid "MONEY BACK GUARANTEED"
+msgstr "Pul Qaytarish Kafolatlangan"
+
+msgid "since 2018"
+msgstr "2018 yildan beri"
+
+msgid "Kitchen"
+msgstr "Oshxona"
+
+msgid "Menu"
+msgstr "Menyu"
+
+msgid "Close"
+msgstr "yopish"

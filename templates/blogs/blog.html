@@ -1,0 +1,203 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %} id="blog-list-sidebar-left" class="blog" {% endblock %}
+{% block content %}
+<div class="main-content">
+    <div id="wrapper-site">
+        <div id="content-wrapper">
+            <div id="main">
+                <div class="page-home">
+
+                    <!-- breadcrumb -->
+                    <nav class="breadcrumb-bg">
+                        <div class="container no-index">
+                            <div class="breadcrumb">
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Living Room</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Sofa</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <div class="content">
+                            <div class="row">
+                                <div class="sidebar-3 sidebar-collection col-lg-3 col-md-3 col-sm-4">
+
+                                    <!-- category -->
+                                    <div class="sidebar-block">
+                                        <div class="title-block">{% trans 'Categories' %}</div>
+                                        <div class="block-content">
+                                            {% for category in categories %}
+                                                {% if category.parent %}
+                                                {% else %}
+                                                    <div class="cateTitle hasSubCategory open level1">
+                                                        <span class="arrow collapse-icons collapsed" data-toggle="collapse" data-target="#{{ category.id }}" aria-expanded="false" role="status">
+                                                            <i class="zmdi zmdi-minus"></i>
+                                                            <i class="zmdi zmdi-plus"></i>
+                                                        </span>
+                                                        
+                                                        <a class="cateItem" onclick="addUrlParameter('cat', {{ category.id }})">{{ category.title }}</a>
+                                                        
+                                                        <div class="subCategory collapse" id="{{ category.id }}" aria-expanded="true" role="status">
+                                                            {% for child in category.children.all %}
+                                                                <div class="cateTitle">
+                                                                    
+                                                                    <a onclick="addUrlParameter('cat', {{ child.id }})" class="cateItem">{{ child }}</a>
+                                                                    
+                                                                </div>
+                                                            {% endfor %}
+                                                            
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- recent posts -->
+                                    <div class="sidebar-block">
+                                        <div class="title-block">{% trans 'Recent Posts' %}</div>
+                                        <div class="post-item-content">
+                                            <div>
+                                                {% for blog in blogs %}
+                                                    <div class="late-item first-child">
+                                                        <a href="{% url 'blogs:blog_detail' pk=blog.id %}">
+                                                            <p class="content-title">{{ blog.title|slice:'15' }}...
+                                                                
+                                                            </p>
+                                                        </a>
+                                                        <span>
+                                                                <i class="zmdi zmdi-comments"></i>{{ blog.comments.count }} comment
+                                                        </span>
+                                                        <span>
+                                                            <i class="zmdi zmdi-calendar-note"></i>{{ blog.created_at }}
+                                                        </span>
+                                                        <p class="description">{{ blog.description|slice:'30' }}...
+                                                        </p>
+                                                        <p class="remove">
+                                                            <a href="{% url 'blogs:blog_detail' pk=blog.id %}">READ MORE</a>
+                                                        </p>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- product tag -->
+                                    <div class="sidebar-block product-tags">
+                                        <div class="title-block">
+                                            {% trans 'Blog Tags' %}
+                                        </div>
+                                        <div class="block-content">
+                                            <ul class="listSidebarBlog list-unstyled">
+                                                {% for tag in tags %}
+                                                    <li>
+                                                        <a onclick="addUrlParameter('tag', {{ tag.id }})" title="{{ tag.title }}">{{ tag.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- advertising -->
+                                    <div class="sidebar-block group-image-special">
+                                        <div class="effect">
+                                            <a href="#">
+                                                <img class="img-fluid" src="{% static 'img/blog/advertising.jpg' %}" alt="banner-2" title="banner-2">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-8 col-lg-9 col-md-9 flex-xs-first main-blogs">
+                                    <h2>{% trans 'Recent Posts' %}</h2>
+                                    {% for blog in blogs %}
+                                        <div class="list-content row">
+                                            <div class="hover-after col-md-5 col-xs-12">
+                                                <a href="{% url 'blogs:blog_detail' pk=blog.id %}">
+                                                    <img src="{{ blog.image.url }}" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="late-item col-md-7 col-xs-12">
+                                                <p class="content-title">
+                                                    <a href="{% url 'blogs:blog_detail' pk=blog.id %}">{{ blog.title }}</a>
+                                                </p>
+                                                <p class="post-info">
+                                                    <span>{{ blog.created_at }}</span>
+                                                    
+                                                    <span>{{ blog.comments.count }} comment</span>
+                                                    
+                                                    {% for b_a in blog.authors.all %}
+                                                        <span>{{ b_a.first_name }}</span>
+                                                    {% endfor %}
+                                                </p>
+                                                <p class="description">{{ blog.description|slice:'150' }}
+                                                </p>
+                                                <span class="view-more">
+                                                    <a href="{% url 'blogs:blog_detail' pk=blog.id %}">{% trans 'view more' %}</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                    <div class="page-list col">
+                                        <ul class="justify-content-center d-flex">
+                                            <li>
+                                                <a rel="prev" href="#" class="previous disabled js-search-link">
+                                                    Previous
+                                                </a>
+                                            </li>
+                                            {% for page in page_obj.paginator.page_range %}
+                                                <li class="current {% if page == page_obj.number %}active{% endif %}">
+                                                    <a rel="nofollow" onclick="addUrlParameter('page',{{ page }})" class="disabled js-search-link">
+                                                        {{ page }}
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                            
+                                            <li>
+                                                <a rel="next" href="#" class="next disabled js-search-link">
+                                                    Next
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+    <script>
+        function addUrlParameter(name, value) {
+            let searchParams = new URLSearchParams(window.location.search)
+            if (searchParams.has(name) && searchParams.get(name) == value) {
+                searchParams.delete(name)
+            } else {
+                searchParams.set(name, value)
+            }
+            window.location.search = searchParams.toString()
+        }
+    </script>
+{% endblock %}

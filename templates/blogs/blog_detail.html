@@ -1,0 +1,220 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %} id="blog-detail" class="blog" {% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <div id="wrapper-site">
+        <div id="content-wrapper">
+            <div id="main">
+                <div class="page-home">
+
+                    <!-- breadcrumb -->
+                    <nav class="breadcrumb-bg">
+                        <div class="container no-index">
+                            <div class="breadcrumb">
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Living Room</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Sofa</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <div class="content">
+                            <div class="row">
+                                <div class="sidebar-3 sidebar-collection col-lg-3 col-md-3 col-sm-4">
+
+                                    <!-- category -->
+                                    <div class="sidebar-block">
+                                        <div class="title-block">{% trans 'Categories' %}</div>
+                                        <div class="block-content">
+                                            {% for category in categories %}
+                                                {% if category.parent %}
+                                                {% else %}
+                                                    <div class="cateTitle hasSubCategory open level1">
+                                                        <span class="arrow collapse-icons collapsed" data-toggle="collapse" data-target="#{{ category.id }}" aria-expanded="false" role="status">
+                                                            <i class="zmdi zmdi-minus"></i>
+                                                            <i class="zmdi zmdi-plus"></i>
+                                                        </span>
+                                                        <a class="cateItem" href="{% url 'blogs:blog_detail' pk=blog.id %}">{{ category.title }}</a>
+                                                        <div class="subCategory collapse" id="{{ category.id }}" aria-expanded="true" role="status">
+                                                            {% for child in category.children.all %}
+                                                                <div class="cateTitle">
+                                                                    
+                                                                    <a href="{% url 'blogs:blog_detail' pk=blog.id %}" class="cateItem">{{ child }}</a>
+                                                                    
+                                                                </div>
+                                                            {% endfor %}
+                                                            
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+                                            
+                                        </div>
+                                    </div>
+
+
+                                    <!-- recent posts -->
+                                    
+
+                                    <!-- product tag -->
+                                    <div class="sidebar-block product-tags">
+                                        <div class="title-block">
+                                            {% trans 'Blog Tags' %}
+                                        </div>
+                                        <div class="block-content">
+                                            <ul class="listSidebarBlog list-unstyled">
+                                                {% for tag in tags %}
+                                                    <li>
+                                                        <a href="#" title="{{ tag.title }}">{{ tag.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- advertising -->
+                                    <div class="sidebar-block group-image-special">
+                                        <div class="effect">
+                                            <a href="#">
+                                                <img class="img-fluid" src="{% static 'img/blog/advertising.jpg' %}" alt="banner-2" title="banner-2">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-9 col-md-9 flex-xs-first main-blogs">
+                                    <h3>{{ blog.title }}</h3>
+                                    <div class="hover-after">
+                                        <img src="{{ blog.image.url }}" alt="img" class="img-fluid">
+                                    </div>
+                                    <div class="late-item">
+                                        <p>
+                                            {{ blog.description }}
+                                        
+                                        <div class="border-detail">
+                                            <p class="post-info float-left">
+                                                <span>{{ blog.created_at }}</span>
+                                                <span>{{ blog.comments.count }} comment</span>
+                                                {% for b_a in blog.authors.all %}
+                                                    <span>{{ b_a.first_name }} {{ b_a.last_name }}</span>
+                                                {% endfor %}
+                                            </p>
+                                            <div class="btn-group">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-share"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                                <a href="#" class="email">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    <span>SEN TO A FRIEND</span>
+                                                </a>
+                                                <a href="#" class="print">
+                                                    <i class="zmdi zmdi-print"></i>
+                                                    <span>Print</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% for b_a in blog.authors.all %}
+                                        <div class="admin">
+                                                <img src="{{ b_a.avatar.url }}" alt="img" class="float-left right" width="100px">
+                                            
+                                                <div class="info">
+                                                    <p>
+                                                        <a href="#">
+                                                            <span class="content-title">
+                                                                
+                                                                {{ b_a.first_name }} {{ b_a.last_name }}
+                                                                
+                                                            </span>
+                                                        </a>
+                                                        <span>Administrator</span>
+                                                    </p>
+                                                    <p class="descript">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt. ut labore et dolore magna aliqua.
+                                                    </p>
+                                                </div>
+                                        </div>
+                                    {% endfor %}
+                                    
+                                    
+                                    <h2 class="title-block">{% trans 'Comments' %}</h2>
+                                    {% for comment in comments %}
+                                    
+                                        <div class="reply late-item">
+                                            <!-- <h2 class="title-block"></h2> -->
+                                            <hr>
+                                            
+                                                <div class="blog-comment" id="blog-comment">
+                                                    <img src="{{ comment.user.image.url }}"  width="100px" alt="img" class="float-left right">
+                                                    <hr>
+                                                </div>
+                                                <div class="comment-content">
+                                                    <p class="user-title">
+                                                        <a href="#">{{ comment.user }}</a>
+                                                        <span class="time">{{ comment.created_at }}
+                                                            
+                                                        </span>
+                                                    </p>
+                                                    <p class="content-comment">
+                                                        {{ comment.comment }}
+                                                    </p>
+                                                </div>
+                                            
+                                            
+                                        </div>
+                                    {% endfor %}
+                                    
+                                    <div class="submit-comment" id="respond">
+                                        <h2 class="title-block">{% trans 'Submit comment' %}</h2>
+                                        <div id="commentInput">
+                                            <form action="{% url 'blogs:blog_detail' pk=blog.id %}" method="post" id="commentform">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                                <div class="row">
+                                                    <div class="form-group col col-sm-12 col-md-4 ">
+                                                        <input type="text" class="inputName form-control" name="name" placeholder="{% trans 'Your Name *' %}">
+                                                    </div>
+                                                    <div class="form-group col col-sm-12  col-md-4">
+                                                        <input type="text" class="inputMail form-control" name="email" placeholder="{% trans 'Your E-mail *' %}">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col col-md-12">
+                                                        <textarea tabindex="4" class="inputContent form-control grey" rows="10" name="comment" placeholder="{% trans 'Your Message' %}"></textarea>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="submit">
+                                                    <input type="submit" name="addComment" id="submitComment" class="btn btn-default" value="{% trans 'Send Message' %}">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
